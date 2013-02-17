@@ -1,0 +1,239 @@
+html, body, div, span, h2, h3, h4, h5, h6, p, 
+a, img,  ol, ul, li
+{
+	margin 			: 0; 
+	padding 		: 0; 
+	border 			: 0; 
+	outline 		: 0; 
+	font-size 		: 100%; 
+	vertical-align 	: baseline; 
+	background 		: transparent;
+}
+h1{
+	margin 			: 0; 
+	padding 		: 0; 
+	border 			: 0; 
+	outline 		: 0; 
+	font-size 		: 100%; 
+	vertical-align 	: baseline; 
+	color  			: #fff;
+}
+body {
+	line-height 	: 1;
+}
+ol, ul {
+	list-style 		: none;
+}
+:focus {
+	outline 		: 0;
+}
+a {
+	text-decoration	: none;
+}
+@font-face {
+    font-family		: 'BebasNeueRegular';
+
+    src				: url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         		  	  url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         		  	  url('../fonts/BebasNeue-webfont.svg#webfontfvFLBU0N') format('svg');
+    font-weight 	: normal;
+    font-style  	: normal;
+}
+body {
+	background 		:  #f6f6f6 url(../images/bckgtexture1.jpg);
+	font-family 	: BebasNeueRegular;
+	
+	color 			: #393939;
+}
+#wrap {
+	width 			: 850px; 
+	margin 			: 0 auto;
+	padding-top 	: 40px;
+} 
+h1 {
+	font-size 		: 3em;
+	margin-left 	: 20px;
+	margin-bottom   : 20px; 
+	text-shadow 	: 0 1px 0 #222;
+	width 			: 95%;
+}
+#Header #Uploader{
+	position: relative;
+	margin-left 	: 20px;
+	margin-bottom   : 20px; 
+	float:right;
+	height:40px;
+	width:40px;
+}
+#image {
+	float 			: left; 
+	position 		: relative; 
+	display 		: inline-block; 
+	width 			: 200px; 
+	height 			: 240px;
+	margin 			: 5px; 
+	padding 		: 1px; 
+	background 		: #fff; 
+	-webkit-box-shadow:0 0 5px 0px rgba(200,200,200,.35);
+	-moz-boz-shadow: 0 0 5px 0px rgba(200,200,200,.35);
+	box-shadow 		: 0 0 5px 0px rgba(200,200,200,.35);
+}
+#image #Title{
+	position 		: absolute;
+	height 			: 30px; 
+	width 			: 100px;
+	overflow 		: hidden;
+	bottom 			: 5px;
+	left 			: 1px; 
+	padding 		: 0 5px;
+	color 			: #000;
+	font-size 		: 1.2em;
+}
+#image #category{
+	position		: absolute;
+	font-size 		: 10px;
+	color 			: rgba(0,0,0,.6); 
+	bottom 			: 0.3em;
+	height 			: 1.6em;
+	letter-spacing  : 0.6em;
+	padding 		: 0 5px;
+	left 			: 1px;
+}
+#image #FeedBackInfo{
+	font-size 		: 15px;
+	color 			: rgba(0,0,0,0.8); 
+	bottom 			: 0px;
+	height 			: 30px;
+	left            : 120px;
+	width 			: 70px;
+	padding-top 	: 5px;
+}
+#image #FeedBackInfo li{
+	margin-top 		: -5px;
+}
+canvas {
+	opacity 		:1; 
+	position 		:absolute; 
+	top 			:1px; 
+	left 			:1px; 
+	-webkit-transition:opacity 1s .2s;
+	-moz-transition:opacity 1s .2s;
+	-o-transition:opacity 1s .2s;
+	-ms-transition:opacity 1s .2s;
+	transition:opacity 1s .2s;
+}
+#image:hover canvas {
+	opacity 		:0;
+}
+p {
+	clear 			:left; 
+	float 			:right; 
+	margin-top 		:10px;
+	margin-right 	:20px;
+}
+p a {
+	color 			:#909090;
+	-webkit-transition:color .6s;
+	-moz-transition:color .6s;
+	-o-transition:color .6s;
+	-ms-transition:color .6s;
+	transition:color .6s;
+}
+p a:hover {
+	color 			 : #eb5cf4;
+}
+#scroll{
+	position  		 : fixed;
+	right     		 : 1em;
+	bottom    		 : 1em;
+	display   		 : none;
+}
+#image .Spam{
+	position 		 : absolute;
+	width 			 : 30px;
+	height 			 : 20px;
+	left 			 : 110px;
+	line-height 	 : 25px;
+
+}
+#image .Vote{
+	position 		 : absolute;
+	width 			 : 30px;
+	height 			 : 20px;
+	left 			 : 140px;
+	line-height 	 : 25px;
+
+}
+#image #Spam:hover{
+	color 			: #FFA500;
+}
+#image #Vote:hover{
+	color 			: #E42217;
+}
+#image .VoteCount{
+	position 		: absolute;
+	left 			: 170px;
+	line-height 	: 25px;
+	font-size 		: 35px;
+	color 			: #aaa;
+	text-align 		: right;
+}
+.tooltip {
+	display 		: none;
+	position 		: absolute;
+	border 			: 1px solid #333;
+	background-color: #161616;
+	border-radius 	: 5px;
+	padding 		: 10px;
+	color 			: #fff;
+	font-size 		: 12px Arial;
+}
+#filter{
+	text-align		: center;
+	font-size		: 15px;
+	font-size 		: 15px;
+	letter-spacing  : 0.3em;
+	padding-bottom  : 5px;
+}
+#filter a{
+	padding-left	: 10px;
+	padding-right	: 10px;
+	color 			: #aaa;
+}
+#scroll{
+	position   		: fixed;
+	right      		: 1em;
+	bottom     		: 1em;
+	display    		: none;
+}
+#UploadForm {
+	text-align: center;
+	display: none;
+}
+#progressbox {
+  position         : relative;
+  width            : relative;
+  border-radius    : 10px;
+  display          : none;
+  text-align       : center;
+  background-color : #000;
+}
+#progressbar {
+  height           : 5px;
+  border-radius    : 3px;
+  background-color : #0099CC;
+  width            : 1%;
+}
+#statustxt {
+  top              : 10px;
+  left             : 50%;
+  position         : absolute;
+  display          : inline-block;
+  color            : #555555;
+}
+#output{
+  font-size        : 16px;
+  height           : auto;
+  width            : relative;
+  
+}
